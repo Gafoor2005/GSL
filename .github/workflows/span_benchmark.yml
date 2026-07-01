@@ -18,11 +18,11 @@ jobs:
       matrix:
         cxx: [g++-13, g++-14, clang++-16, clang++-17, clang++-18]
         cppstd: [20, 23]
-        exclude:
-          - cxx: g++-13
-            cppstd: 23 
-          - cxx: clang++-17
-            cppstd: 23 
+        # exclude:
+        #   - cxx: g++-13
+        #     cppstd: 23 
+        #   - cxx: clang++-17
+        #     cppstd: 23 
     steps:
       - uses: actions/checkout@v4
 
